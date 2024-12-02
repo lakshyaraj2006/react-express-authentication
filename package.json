@@ -1,0 +1,21 @@
+{
+  "name": "react-express-authentication",
+  "version": "1.0.0",
+  "workspaces": ["packages/frontend", "packages/backend"],
+  "scripts": {
+    "dev:backend": "npm run dev --workspace=packages/backend",
+    "dev:frontend": "npm run dev --workspace=packages/frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    
+    "start:backend": "npm run start --workspace=packages/backend",
+    "start:frontend": "npm run start --workspace=packages/frontend",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
